@@ -8,10 +8,76 @@
     scroll-behavior: smooth;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 header{
     width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
+    height: 600px;
     position: relative;
+    background-image: linear-gradient(to right, hsla(0, 0%, 26%, 0.514) 0%, hsla(0, 0%, 0%, 0.616) 100%), url(../LandingsWeB/img/background/background-image.jpg);
+    background-size: cover;
+    /*background-attachment: fixed;*/
+}
+
+header h1{
+    font-family: 'Anton';
+}
+
+header .h1{
+    font-family: 'Anton';
+    color: rgb(247, 201, 0);
+}
+
+/*Inicio navbar*/
+nav{
+    align-items: center;
+    padding: 30px 50px 0 0;
+    position: fixed;
+    z-index: 1;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 25px;
+
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+    color: rgb(155, 152, 152);
+  
+}
+/*Fin navbar*/
+
+/* texto del header*/
+header .texto-header{
+    color:#fff;
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* Fin texto del header*/
+
+.contenedor{
+    padding: 60px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
 }
