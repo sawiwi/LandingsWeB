@@ -17,6 +17,7 @@ header{
     width: 100%;
     height: 600px;
     position: relative;
+    display: flex;
     background-image: linear-gradient(to right, hsla(0, 0%, 26%, 0.514) 0%, hsla(0, 0%, 0%, 0.616) 100%), url(../LandingsWeB/img/background/background-image.jpg);
     background-size: cover;
     /*background-attachment: fixed;*/
@@ -35,12 +36,14 @@ header .h1{
 nav{
     align-items: center;
     padding: 30px 50px 0 0;
+    margin-left:380px;
     position: fixed;
     z-index: 1;
 }
 
 nav ul{
     display: flex;
+    justify-content: center;
 }
 
 nav ul li{
@@ -64,13 +67,51 @@ nav ul li a:hover{
 
 /* texto del header*/
 header .texto-header{
-    color:#fff;
     display: flex;
     height: 430px;
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    
+    justify-content: end;
     flex-direction: column;
+    text-align: center;
+}
+header .texto-subheader{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    
+    justify-content: end;
+    flex-direction: column;
+    text-align: center;
+}
+
+.texto-header h1{
+    font-size: 40px;
+    font-weight: 200;
+    color: #fff;
+    text-align: right;
+    
+}
+
+.texto-header .h1{
+    color: rgb(255, 239, 10);
+    
+}
+
+.texto-subheader h3{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.texto-subheader p{
+    width: 44%;
+    color: #fff;
+    text-align: left;
+    margin-left: 30px;
+    
 }
 /* Fin texto del header*/
 
@@ -81,3 +122,17 @@ header .texto-header{
     margin: auto;
     overflow: hidden;
 }
+
+/*Seccion nuestro servicio*/
+
+.pre-titulo{
+    font-weight: 300;
+    text-align: center;
+}
+
+.titulo{
+    font-size: 30px;
+    text-align: center;
+}
+
+/*Fin Seccion nuestro servicio*/
