@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+/* color ilustraciones #ffbb00*/
 :root{
     scroll-behavior: smooth;
 }
@@ -133,6 +133,70 @@ header .texto-subheader{
 .titulo{
     font-size: 30px;
     text-align: center;
+}
+
+.contenedor .servicio{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+
+.uno{
+    margin: auto;
+    animation: us-move 4s linear infinite;
+}
+
+.dos{
+    animation: us-move 4s linear infinite;
+}
+
+.dos-medio{
+    animation: us-move 4s linear infinite;
+}
+
+.tres{
+    margin: auto;
+    animation: us-move 4s linear infinite;
+}
+.img-servicio{
+    width: 90%;
+   
+    z-index: 1;
+}
+@keyframes us-move {
+
+    0%{
+        transform: translateY(15px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+    
+}
+
+.titulo-img{
+    text-align: center;
+    font-weight: 400;
+    z-index: 2;  
+}
+
+.p-servicio{
+    display: flex;
+    text-align: center;
+    font-weight:300;
+    justify-content: center;
+}
+
+.uno:hover,
+.dos:hover,
+.dos-medio:hover,
+.tres:hover{
+    animation:stop;
 }
 
 /*Fin Seccion nuestro servicio*/
