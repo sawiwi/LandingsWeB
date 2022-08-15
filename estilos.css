@@ -18,7 +18,7 @@ header{
     height: 600px;
     position: relative;
     display: flex;
-    background-image: linear-gradient(to right, hsla(0, 0%, 26%, 0.514) 0%, hsla(0, 0%, 0%, 0.616) 100%), url(../LandingsWeB/img/background/background-image.jpg);
+    background-image: linear-gradient(to right, hsla(0, 0%, 26%, 0.514) 0%, hsla(0, 0%, 0%, 0.616) 100%), url(../img/background/background-image.jpg);
     background-size: cover;
     /*background-attachment: fixed;*/
 }
@@ -162,7 +162,6 @@ header .texto-subheader{
 }
 .img-servicio{
     width: 90%;
-   
     z-index: 1;
 }
 @keyframes us-move {
@@ -200,3 +199,80 @@ header .texto-subheader{
 }
 
 /*Fin Seccion nuestro servicio*/
+
+
+/*Seccion de como lo hacemos*/
+.c-paso{
+    display: flex;
+    justify-content: center;
+    cursor: default;
+    height: 360px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 80%;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+}
+
+.c-paso:hover{
+    transform: rotateY(180deg);
+}
+
+.c-paso .frente,
+.c-paso .atras{
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.c-paso .atras{
+    transform: rotateY(180deg);
+    margin-top: 80px;
+}
+
+.img-paso{
+    width: 100%;
+    z-index: 1;
+}
+
+.t-paso{
+    text-align: center;
+    font-weight: 500;
+    z-index: 2;  
+}
+
+.p-paso{
+    display: flex;
+    text-align: center;
+    font-weight:400;
+    justify-content: center;
+}
+
+
+
+
+@-webkit-keyframes giro{
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes giro{
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+       transform: rotateY(0deg); 
+    }
+
+}
+
+/*FIN Seccion de como lo hacemos*/
