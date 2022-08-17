@@ -487,6 +487,42 @@ ul{
 }
 /*Responsividad de La Pagina  */
 @media  screen and (max-width: 1200px) {
+
+    
+    /*Seccion de como lo hacemos*/
+    .c-paso{  
+        margin-top: 20px;
+        height: 300px;
+        width: 100%;
+    }
+
+
+    .c-paso .atras{
+        transform: rotateY(180deg);
+        margin-top: 20px;
+    }
+
+    .img-paso{
+        width: 120%;
+        height: auto;
+        z-index: 1;
+    }
+
+    .t-paso{
+        text-align: center;
+        font-weight: 500;
+        z-index: 2;  
+    }
+
+    .p-paso{
+        text-align: center;
+        font-weight:400;
+        justify-content: left;
+    }
+
+    /*FIN Seccion de como lo hacemos*/
+
+    /*Sección nosotros*/
     .container__cards{
         position: relative;
         top: 0;
@@ -494,8 +530,22 @@ ul{
         transform: none;
         margin-top: 100px;
         padding-bottom: 100px;
+        width: 110%;
     }
-    
+
+    .cover__card{
+        width: 100%;
+        height: 150px;
+        border-radius: 14px;
+        overflow:hidden;
+    }
+
+    .cover__card img{
+        width: 130%;   
+    }
+
+
+    /*Fin Sección nosotros*/
 }
 
 
