@@ -136,6 +136,139 @@ header .texto-subheader{
 }
 
 /*Fin Seccion nuestro servicio*/
+/*Contenido  de la Pagina*/
+:focus{
+    outline: none;
+}
+.form_wrap{
+    width: 850px;
+    height: 600px;
+    margin: 50px auto;
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+/*Informacion del Contacto*/
+.contact_info::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: red;
+    opacity: 0.5;
+}
+.contact_info{
+    color: #fff;
+    width: 38%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('/img/background/background-image.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.info_title{
+    margin-bottom: 60px;
+}
+.info_title h2{
+    font-size: 35px;
+    text-align: center;
+}
+.info_title span{
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.info_title,
+.info_items{
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.info_items p{
+    color: #fff;
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.info_items p:nth-child(1) span{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.info_items p:nth-child(2) span{
+    font-size: 20px;
+    margin-right: 15px;
+    margin-left: 4px;
+
+}
+form.form_contact{
+    width: 62%;
+    padding: 30px 40px;
+}
+form.form_contact h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 30px;
+}
+form.form_contact .user_info{
+    display: flex;
+    flex-direction: column;
+}
+form.form_contact label{
+    font-weight: 600;
+}
+form.form_contact input,
+form.form_contact textarea{
+    width: 100%;
+    padding: 8px 0px 5px;
+
+    border: none;
+    margin-bottom: 20px;
+
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 2px solid red;
+    color: #5a5a5a;
+    font-size: 14px;
+    font-weight: 400;
+}
+form.form_contact textarea{
+   max-width: 100%;
+   min-width: 100%;
+   max-height: 90px;
+}
+
+button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    align-self: center;
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: red; 
+    border-color: red; 
+    border-style: solid; 
+    border: none;
+    border-radius: 25px;  
+    width: 450px;   
+    cursor: pointer;
+    color: #fff;
+}
+button:hover{
+    color: #fff;
+}
+
 /*Footer de La pagina */ 
 .container1{
     max-width: 1170px;
