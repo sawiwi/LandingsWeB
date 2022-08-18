@@ -23,6 +23,10 @@ header{
     /*background-attachment: fixed;*/
 }
 
+.header #btn_menu{
+    display: none;
+}
+
 header h1{
     font-family: 'Anton';
 }
@@ -39,28 +43,40 @@ nav{
     margin-left:380px;
     position: fixed;
     z-index: 1;
+    margin: auto;
 }
 
 nav ul{
-    display: flex;
-    justify-content: center;
+    position: fixed;
+    top: 0; left: 0;
+    background: #262626;
+    width: 100%;
+    height: 50px;
+    z-index: 10;
 }
 
 nav ul li{
     list-style: none;
-    margin-left: 25px;
+    width: calc(100% / 5 );
+    height: 100%;
+    float: left;
 
 }
 
 nav ul li a{
-    color:#fff;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
 }
 
 nav ul li a:hover{
-    color: rgb(155, 152, 152);
+    color:#fff;
+    background: #ffbb00;
   
 }
 /*Fin navbar*/
@@ -69,8 +85,7 @@ nav ul li a:hover{
 header .texto-header{
     display: flex;
     height: 430px;
-    width: 100%;
-    
+    width: 100%;    
     justify-content: end;
     flex-direction: column;
     text-align: center;
@@ -79,7 +94,6 @@ header .texto-subheader{
     display: flex;
     height: 430px;
     width: 100%;
-    
     justify-content: end;
     flex-direction: column;
     text-align: center;
@@ -107,7 +121,7 @@ header .texto-subheader{
 }
 
 .texto-subheader p{
-    width: 44%;
+    width: 40%;
     color: #fff;
     text-align: left;
     margin-left: 30px;
@@ -278,8 +292,8 @@ header .texto-subheader{
 }
 
 .card{
-    width: 350px;
-    margin: 10px;
+    width: 400px;
+    margin: 20px;
     padding: 20px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     background:rgba(255, 255, 255, 0.5);
@@ -300,7 +314,7 @@ header .texto-subheader{
 
 .cover__card{
     width: 100%;
-    height: 180px;
+    height: 200px;
     border-radius: 14px;
     overflow:hidden;
 }
@@ -588,11 +602,29 @@ ul{
     30%{transform: rotate(15deg);}
     40%{transform: rotate(15deg);}
 }
-/*Responsividad de La Pagina  */
-@media  screen and (max-width: 1200px) {    
+/*Responsividad de La Pagina  */ 
+@media  screen and (max-width: 1200px) {
+    /* texto del header*/
+    header .texto-header{
+       
+        height: 430px;
+        width: 100%;    
+       
+    }
+    header .texto-subheader{
+        height: 440px;
+        width: 100%;
+    }
+
+
+    .texto-subheader p{
+        width: 50%;   
+    }
+    /* Fin texto del header*/
     /*Seccion de como lo hacemos*/
     .c-paso{  
-        margin-top: 20px;
+        margin-top: 60px;
+        margin-bottom: 40px;
         height: 300px;
         width: 100%;
     }
@@ -600,7 +632,7 @@ ul{
 
     .c-paso .atras{
         transform: rotateY(180deg);
-        margin-top: 20px;
+        margin-top: 130px;
     }
 
     .img-paso{
@@ -635,27 +667,66 @@ ul{
     }
 
     .cover__card{
-        width: 100%;
-        height: 150px;
+        justify-content: center;
+        width: 90%;
+        height: 180px;
         border-radius: 14px;
         overflow:hidden;
     }
 
     .cover__card img{
-        width: 130%;   
+        width: 100%;   
     }
 
 
     /*Fin Sección nosotros*/
 }
+@media screen and (max-width: 767px ){
+    /* texto del header*/
+    header .texto-header{
+        height: 480px;
+        justify-content: center;
+        text-align: left;
+        
+    }
+    header .texto-subheader{
+        width: 90%;
+        height: 480px;
+        justify-content: center;
+        text-align: center;
+    }
 
-@media(max-width: 767px ){
+
+    .texto-subheader p{
+        width:80%;
+    
+    }
+    /* Fin texto del header*/
     .footer-col{
         width: 50%;
         margin-bottom: 30px;
     }
 }
+
 @media(max-width: 574px ){
+    /* texto del header*/
+    header .texto-header{
+        height: 480px;
+        justify-content: center;
+        text-align: left;
+    }
+    header .texto-subheader{
+        width: 100%;
+        height: 480px;
+        justify-content: center;
+        text-align: center;
+    }
+    .texto-subheader p{
+        width:90%;
+    
+    }
+    /* Fin texto del header*/
+    
     .footer-col{
         width: 100%;
     }
