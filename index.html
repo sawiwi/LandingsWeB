@@ -14,28 +14,60 @@
     <link rel="stylesheet" href="estilos.css">
     <title>Inicio</title>
 </head>
-<body>
-    <header class="header">
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#nuestro">Servicio</a></li>
-                    <li><a href="#como">Formula</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav> 
-            <div class="texto-header" id="inicio">
-                <h1>SERVICIO LANDINGS WEB<h1 class="h1">& HOST</h1></h1>
-            </div>
-            
-            <div class="texto-subheader">   
-                <h3>Diseño y desarrollo</h3>
-                <p>Crea con nosotros tu landingPage que más te guste, con diseños y efectos innovadores.
-                </p>
-            </div>     
+<body id="body">
+    <header >
+        <div class="icon_menu">
+            <img src="img/img-menu/bx-menu.svg" alt="" id="btn_open">
+        </div>  
     </header>
-    <main >
+    <div class="menu__side" id="menu_side">
+        <div class="name__page">
+           
+        </div>
+        <div class="option__menu">
+            <a href="#inicio" class="selected">
+                <div class="option">
+                    <box-icon name='home-alt-2' title="Inicio"></box-icon>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+            <a href="#nuestro">
+                <div class="option">
+                    <box-icon ' name='briefcase-alt-2' title="Servicio"></box-icon>
+                    <h4>Servicio</h4>
+                </div>
+            </a>
+            <a href="#como">
+                <div class="option">
+                    <box-icon type='solid' name='flask' title="Nuestra formula"></box-icon>
+                    <h4>Formula</h4>
+                </div>
+            </a>
+            <a href="#nosotros">
+                <div class="option">
+                    <box-icon  name='group' title="Nosotros"></box-icon>
+                    <h4>Nosotros</h4>
+                </div>
+            </a>
+            <a href="#contacto">
+                <div class="option">
+                    <box-icon  name='message' title="Contacto"></box-icon>
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="header">
+        <div class="texto-header" id="inicio">
+            <h1>SERVICIO LANDINGS WEB<h1 class="h1">& HOST</h1></h1>
+        </div>
+        <div class="texto-subheader">   
+            <h3>Diseño y desarrollo</h3>
+            <p>Crea con nosotros tu landingPage que más te guste, con diseños y efectos innovadores.
+            </p>
+        </div>     
+    </div>    
+    <main>
         <section class="contenedor" id="nuestro">
             <div class="scrolling">
                 <h4 class="pre-titulo">¿Qué hacemos?</h4>
@@ -220,5 +252,7 @@
 <!--  Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="js/scrolling.js"></script>
+<script src="js/menu.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 </body>
 </html>
