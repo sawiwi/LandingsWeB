@@ -173,6 +173,18 @@ a.selected{
 
 /*Fin navbar*/
 
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+/*Fin del Texto*/
+
 /*Comienzo de scroll*/
 .scrolling{
     transform: translate(400%);
@@ -508,7 +520,6 @@ a.selected{
 
 }
 .contact-form{
-    display: grid;
     row-gap: 1rem;
 }
 .contact-form input{
@@ -552,7 +563,61 @@ a.selected{
 }
 /*Responsividad  del Contacto*/
 @media(max-width: 845px ){
+    .info_items{
+        
+        font-size: auto;
+    }
+    .contact-form input{
+        width: 50%;
+        padding: 8px 0px 5px;
+        border: none;
+        margin-bottom: 40px;
+        font-family: 'Open Sans', sans-serif;
+        border-bottom: 2px solid #ffbb00;
+        color: #5a5a5a;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 200;
+    }
+    .contact-form textarea{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+        padding: 8px 0px 5px;
+        border: none;
+        margin-bottom: 20px;
+        font-family: 'Open Sans', sans-serif;
+        border-bottom: 2px solid #ffbb00;
+        color: #5a5a5a;
+        font-size: 14px;
+        font-weight: 200;
+    }
+    .contact-form textarea{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        resize: none;
+        height: 100px;
+    }
+    .contact-form .send-button{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border:none;
+        outline: none;
+        background:rgba(254, 140, 0, 1);
+        font-size:1rem;
+        font-weight: 250;
+        color: #fff;
+        cursor: pointer;
+    }
     .contact-container{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         grid-template-columns: 1fr;
         gap:1rem;
         margin-top: 5rem !important;
@@ -623,7 +688,6 @@ ul{
     background-color: rgba(255, 255, 255, 0.2);
     margin: 0 10px 10px 0;
     text-align: center;
-    line-height: 34px;
     border-radius: 50%;
     justify-content: center;
     color: #ffffff;
@@ -654,7 +718,7 @@ ul{
     font-size: 26px;
     color: #000;
     border-radius: 50%;
-    outline: 2px solid #000;
+    outline: 2px solid #fff;
     transition-property: 
     outline-offset, outline-color,
     background-color;
