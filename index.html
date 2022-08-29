@@ -11,7 +11,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Css-->
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/tab_menu.css">
     <title>Inicio</title>
 </head>
 <body id="body">
@@ -99,11 +100,11 @@
                 </div>
             </div>
         </section>
-        <section class="contenedor  " id="como">
+        <section class="contenedor" id="como">
             <div class="scrolling">
                 <h4 class="pre-titulo">¿Cómo lo hacemos?</h4>
                 <h1 class="titulo">Nuestra Formula</h1>
-                <div class="row justify-content-center">
+                <div class="row">
                     <div class="col-sm-6 ">
                         <div class="c-paso">
                             <div class="frente">
@@ -145,58 +146,33 @@
                         </div>
                 </div>
             </div>
+            </div>
         </section>
         <section class="contenedor" id="nosotros">
             <div class="scrolling">
                 <h4 class="pre-titulo">¿Quienes somos?</h4>
                 <h1 class="titulo">Nosotros</h1>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="card">
-                            <div class="card-img">
-                                <img class="img-card" src="img/img-nosotros/CEO_Flatline.svg" alt="">
-                            </div> 
-                            <div class="info">
-                                <p class="subtitle">Fabian Salas Astete</p>   
-                            </div>
-                            <div class="card-info">
-                                <ul class="social-media">
-                                    <li>
-                                        <a href="">
-                                            <img src="img/iconos-contact/instagram-line.svg">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="img/iconos-contact/discord-line.svg">
-                                        </a>
-                                    </li>
-                                </ul>   
-                            </div>
+                <div class="container__cards">
+                    <div class="card">
+                        <div class="cover__card">
+                            <img src="img/img-nosotros/CEO_Flatline.svg" alt="">
+                        </div>
+                        <h2>Analista programador</h2>
+                        <hr/>
+                        <div class="footer__card">
+                            <h3 class="user__name">Fabian Salas </h3>
+                            <a href="https://www.instagram.com/sawi__wi/"><img src="/img/iconos-contact/instagram-line.svg" alt="" class="img-footer-card"></a>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="card">
-                            <div class="card-img">
-                                <img class="img-card" src="img/img-nosotros/CEO_Flatline.svg">
-                            </div> 
-                            <div class="info">
-                                <p class="subtitle">Gary Monasterio</p>   
-                            </div>
-                            <div class="card-info">
-                                <ul class="social-media">
-                                    <li>
-                                        <a href="">
-                                            <img src="img/iconos-contact/instagram-line.svg">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="img/iconos-contact/discord-line.svg">
-                                        </a>
-                                    </li>
-                                </ul>   
-                            </div>
+                    <div class="card">
+                        <div class="cover__card">
+                            <img src="img/img-nosotros/Data_Arranging_Monochromatic.svg" alt="">
+                        </div>
+                        <h2>Ingeniero en Informatica</h2>
+                        <hr/>
+                        <div class="footer__card">
+                            <h3 class="user__name">Gary Monasterio</h3>
+                            <a href="https://www.instagram.com/dread._.9/"><img src="/img/iconos-contact/instagram-line.svg" alt="" class="img-footer-card"></a> 
                         </div>
                     </div>
                 </div> 
@@ -273,10 +249,14 @@
             </div>
         </div>
     </footer>
+
+ 
+    
 <!--  Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="js/scrolling.js"></script>
 <script src="js/menu.js"></script>
+ <!--usage de boxicon-->
 <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 </body>
 </html>
