@@ -21,6 +21,7 @@
             <img src="img/img-menu/bx-menu.svg" alt="" class="btnopen" id="btn_open" onclick="AbrirMenu()">
         </div>    
     </header>
+     <!--  Menu de LandingPage -->
     <div class="menu__side" id="menu_side">
         <div class="name__page">
         </div>
@@ -74,6 +75,7 @@
             </div>
         </div>     
     </div>    
+    <!--  Cartas de que ofrecemos y cuales son nuestros servicios -->
     <main>
         <section class="contenedor" id="nuestro">
             <div class="scrolling">
@@ -106,6 +108,7 @@
                 </div>
             </div>
         </section>
+        <!--  Tarjetas con representacion de como trabajamos  -->
         <section class="contenedor" id="como">
             <div class="scrolling">
                 <h4 class="pre-titulo">¿Cómo lo hacemos?</h4>
@@ -154,6 +157,7 @@
             </div>
             </div>
         </section>
+        <!--  Tarjetas de Quienes somos -->
         <section class="contenedor" id="nosotros">
             <div class="scrolling">
                 <h4 class="pre-titulo">¿Quienes somos?</h4>
@@ -186,6 +190,7 @@
                 </div>
             </div>
         </section>
+        <!--  Envio de Correo -->
         <section id="contacto" class="contenedor">
             <div class="scrolling">
                 <h4 class="pre-titulo">¿Cuando?</h4>
@@ -197,9 +202,12 @@
                         </div> 
                     </div>
                     <div class="form-container">
-                        <form action="https://formsubmit.co/TomaCursos13@gmail.com" method="POST" class="contact-form">  
+                        <form action="https://formsubmit.co/TomaCursos13@gmail.com" method="POST" class="contact-form"> 
+                            <input type="hidden" name="_cc" value="x56dragon@gmail.com,fabian.salas.astete@gmail.com ">
                             <input type="text" name="Nombre" placeholder="Nombre" required>
                             <input type="email" name="Email" id="" cols="30" rows="10" placeholder="Email" required>
+                            <!--  Solo con _captcha -->
+                            <input type="hidden" name="_autoresponse" value="Gracias por su correo , le respoonderemos a la brevedad">
                             <input type="number" name="Numero" id="" cols="30" rows="10" placeholder="Celular" required> 
                             <textarea name="Comentario" id="" cols="30" rows="10" placeholder="Escribe tu mensaje" required></textarea>
                             <input type="submit"  value="Enviar" class="send-button" required>
@@ -210,6 +218,7 @@
             </div>
         </section>
     </main>
+     <!--  Footer  de LandingPage -->
     <footer class="footer">
         <div class="container1">
             <div class="row">
